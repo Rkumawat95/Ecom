@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Cart</title>
+</head>
+<body class="bg-cyan-100">
+  <nav id="navbar" class="p-3 bg-blue-500 shadow flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <span class="text-white font-[poppins] cursor-pointer">
+        <img class="h-5 inline" src="/src/img/ecom.jfif" alt="Ecom image" srcset="">
+        Ecom
+      </span>
+      
+      <span class="mx-6 text-3xl text-white cursor-pointer md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+    <ul id="ul" class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-blue-500
+    w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 top-[-400px] transition-all
+    ease-in duration-500">
+      <li class="mx-4 my-6 md:my-0">
+        <a id="home" class="text-white hover:text-yellow-700 duration-500">Home</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a id="prod" class="text-white hover:text-yellow-700 duration-500">Products</a>
+      </li>
+      <li id="myp" class="rk2 mx-4 my-6 md:my-0">
+        <a class="text-white hover:text-yellow-700 duration-500">
+          <ion-icon name="person-sharp"></ion-icon>My Profile</a>
+      </li>
+      <li id="cart" class="rk2 mx-4 my-6 md:my-0">
+        <a class="text-white hover:text-yellow-700 duration-500">
+          <ion-icon name="cart-sharp"></ion-icon>cart
+          <span id="count">0</span>
+        </a>
+      </li>
+
+      <li id="log1" class="rk1 mx-4 my-6 md:my-0">
+        <a href="/src/login.html" class="text-white hover:text-yellow-700 duration-500">LogIn</a>
+      </li>
+      <li id="sign1" class="rk2 mx-4 my-6 md:my-0 ">
+        <a href="#" class="text-white hover:text-yellow-700 duration-500">SignOut</a>
+      </li>
+      <button id="sign2" class="rk1 bg-slate-400 text-white font-[poppins] duration-500 
+      px-6 py-2 mx-4 hover:bg-yellow-500 rounded">Sign Up</button>
+    </ul>
+  </nav>
+<div class="relative overflow-x-auto flex">
+  <table class="w-3/4 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+              <th scope="col" class="px-6 py-3">Product name</th>
+              <th scope="col" class="px-6 py-3">Price</th>
+          </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+
+  </table>
+  <div class="max-w-sm w-1/2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <b>Total Price : <span id="spanprice" class="justify-center items-center"></span></b></h5>
+    <div>
+      <button id="bnow" class="bg-red-400 text-white font-[poppins] duration-500 
+      px-6 py-2 mx-4 hover:bg-yellow-500 rounded">Buy Now
+      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+    </svg>
+    </button>
+    </div>
+  </div>
+</div>
+<script src="/src/js/index.js"></script>
+<script src="/src/js/cart.js"></script>
+</body>
+</html>

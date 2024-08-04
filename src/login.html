@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>LogIn</title>
+  </head>
+  <body>
+    <div class="w-screen h-screen flex justify-center bg-cyan-200">
+      <div class="max-w-md border-2 rounded-2xl  bg-white opacity-90 my-2">
+        <div class="flex justify-center my-2">
+          <h1 class="text-2xl text-zinc-600 font-bold py-4">Log In</h1>
+        </div>
+        <div class="flex-col justify-center">
+            <form action="" id="login" name="login" method="post">
+            <div class="mb2 px-3 py-3">
+                <label for="email" class="text-zinc-600">Email</label>
+                <input id="email" type="email" name="email" class="border-2 rounded-2xl w-full px-2 py-2" required>
+            </div>
+            <div class="mb2 px-3 py-3">
+                <label for="password" class="text-zinc-600">Password</label>
+                <input id="password" type="password" name="password" class="border-2 rounded-2xl w-full px-2 py-2"  required>
+            </div>
+            <div class="mb2 flex justify-center my-4">
+              <a href="">
+                  <button class="border-2 rounded-2xl px-4 py-4 bg-blue-800 hover:bg-green-700" type="submit"
+                  onclick="" id="submit">Submit</button>
+              </a>
+          </div>
+          <div id="check"></div>
+        </form>
+        <div class="justify-center my-3">
+          <h3>Create new Account </h3>
+          <div class="mb2 flex justify-center my-4">
+          <a href="/src/Signup.html">
+            <button class="border-2 rounded-xl px-4 py-3 bg-blue-800 hover:bg-green-700"
+            >Sign Up</button>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/js/login.js"></script>
+  </body>
+</html>
